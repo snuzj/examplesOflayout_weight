@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListExamplesActivity"
+    android:background="#fffbff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbarLl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/back_button"/>
+
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Các ví dụ về layout_weight"
+            android:textSize="20sp"
+            android:textColor="@color/primary_widget"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp1Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e9ddff"
+            app:cornerRadius="10dp"
+            android:text="khi layout_weight có giá trị mặc định"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp2Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e9ddff"
+            app:cornerRadius="10dp"
+            android:text="Khi layout_weight được gán giá trị bằng 1"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp3Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e9ddff"
+            app:cornerRadius="10dp"
+            android:text="khi tổng layout_weight của 2 layout con bằng 3"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp4Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e9ddff"
+            app:cornerRadius="10dp"
+            android:text="khi chỉnh sửa layout_height"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp5Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e8def8"
+            app:cornerRadius="10dp"
+            android:text="Chia dòng chữ theo chiều ngang"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp6Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e8def8"
+            app:cornerRadius="10dp"
+            android:text="Khi chỉnh sửa layout_width"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp7Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teriaty_color"
+            app:cornerRadius="10dp"
+            android:text="Sử dụng thuộc tính weightSum"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp8Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e7e0eb"
+            app:cornerRadius="10dp"
+            android:text="Thuộc tính weightSum = 2 sẽ tự chia layout cha thành 2 phần bằng nhau"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp9Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e7e0eb"
+            app:cornerRadius="10dp"
+            android:text="Tận dụng khoảng trống của layout cha dành cho EditText và Button bằng layout_weight"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exp10Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e7e0eb"
+            app:cornerRadius="10dp"
+            android:text="Sử dụng thuộc tính weightSum và weight với 3 button"
+            android:textColor="#31101d"
+            android:contentDescription="@string/example"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
